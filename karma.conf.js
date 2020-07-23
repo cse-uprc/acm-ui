@@ -29,5 +29,4 @@ module.exports = function (config) {
     singleRun: false,
     restartOnFileChange: true,
   });
-  process.env.CHROME_BIN = "/usr/bin/chromium";
 };
