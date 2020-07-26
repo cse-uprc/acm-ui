@@ -18,4 +18,4 @@ jobs:
         with:
           node-version: 12
       - run: npm ci
-      - run: npm run test --disable-setuid-sandbox
+      - run: ng test --watch=false --code-coverage --source-map true
