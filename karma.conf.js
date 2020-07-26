@@ -6,9 +6,10 @@ module.exports = function (config) {
     restartOnFileChange: true,
     restartOnFileChange: true,
     customLaunchers: {
-    ChromeHeadlessCustom: {
-      base: 'ChromeHeadless',
-      flags: ['--no-sandbox', '--disable-gpu']
+      ChromeHeadlessCustom: {
+        base: 'ChromeHeadless',
+        flags: ['--no-sandbox', '--disable-gpu']
+      }
     },
     basePath: "",
     frameworks: ["jasmine", "@angular-devkit/build-angular"],
