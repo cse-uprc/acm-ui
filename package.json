@@ -5,11 +5,13 @@
     "ng": "ng",
     "start": "node index.js",
     "build": "ng build",
-    "test": "ng test --watch=false --browsers=ChromeHeadlessCustom",
+    "build:ci": "npm run clean && npm run test:ci && npm run build:prod",
+    "test:ci": "ng test --watch=false --browsers=ChromeHeadlessCustom",
+    "test": "ng test --watch=false",
     "test:watch": "ng test",
+    "serve": "ng serve",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "build:ci": "npm run clean && npm run test && npm run build:prod",
     "heroku-postbuild": "ng build --prod"
   },
   "dependencies": {
