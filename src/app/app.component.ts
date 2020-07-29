@@ -12,6 +12,7 @@ export class AppComponent implements OnInit {
   constructor(private numberAdderService: MathService) {}
 
   ngOnInit() {
+    this.numberAdderService.testMethod();
     this.testValue = this.numberAdderService.addThreeNumbers(3, 4, 8);
   }
 }
