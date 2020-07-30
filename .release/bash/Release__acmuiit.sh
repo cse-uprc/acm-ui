@@ -20,17 +20,16 @@ echo ''
 
 echo "Installing Latest Release ..."
 npm i cse-uprc/acmkit#$TAG
-echo ""
+echo ''
 
 echo "Pushing Branch ..."
-sleep 10s
-git add .
+git add --all
 git commit -m "ACMKUI: Incremental Version Update -- package.json update"
 git push -u origin HEAD
 echo ''
 
 echo "Switching to master ..."
-git checkout master
+git checkout development
 echo ''
 
 echo "---------------------------------------------"
