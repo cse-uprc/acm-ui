@@ -12,7 +12,6 @@
     "serve": "ng serve",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "updateVersionCommand": "npm i cse-uprc/acmkit#v<VERSION_TAG>",
     "heroku-postbuild": "ng build --prod"
   },
   "dependencies": {
