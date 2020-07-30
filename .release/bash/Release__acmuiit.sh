@@ -15,7 +15,7 @@ git checkout -b "ACMUI-VERSION-UPDATE-$RANDOM"
 echo ''
 
 echo "Getting Latest release ..."
-TAG=$(git ls-remote --tags --refs --sort='v:refname' git://github.com/cse-uprc/acmkit | tail -n1 | sed 's/.*///')
+TAG=$(git ls-remote --tags --refs --sort='v:refname' git://github.com/cse-uprc/acmkit.git | tail -n1 | sed 's/.*///')
 echo ''
 
 echo "Installing Latest Release ..."
