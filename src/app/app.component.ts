@@ -6,10 +6,16 @@ import { MathService } from 'acmkit/dist/acmkit-lib';
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent implements OnInit {
-  title = 'acm-ui';
-  testValue = 0;
 
-  constructor(private numberAdderService: MathService) {}
+  // Declare variables to be used in HTML template here
+  title: string;
+  testValue: number;
+
+  constructor(private numberAdderService: MathService) {
+    // Initialize variables to be used in HTML template here
+    this.title = 'UPRC ACM Student Chapter';
+    this.testValue = 0;
+  }
 
   ngOnInit() {
     this.numberAdderService.testMethod();
