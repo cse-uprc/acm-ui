@@ -23,7 +23,7 @@ npm i cse-uprc/acmkit#$TAG
 echo ""
 
 echo "Pushing Branch ..."
-sleep 3s
+sleep 10s
 git add .
 git commit -m "ACMKUI: Incremental Version Update -- package.json update"
 git push -u origin HEAD
