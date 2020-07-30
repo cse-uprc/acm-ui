@@ -1,4 +1,4 @@
-cd C:/Users/sambu/OneDrive/Desktop/acmui
+cd C:/Users/sambu/OneDrive/Desktop/acm-ui
 
 echo "---------------------------------------------"
 echo "Beginning Release ..."
@@ -19,7 +19,7 @@ TAG=$(git ls-remote --tags --refs --sort='v:refname' git://github.com/cse-uprc/a
 echo ''
 
 echo "Installing Latest Release ..."
-npm i cse-uprc/acmkit#$TAG
+npm i cse-uprc/acm-kit#$TAG
 echo ''
 
 echo "Pushing Branch ..."
