@@ -1,13 +1,22 @@
 import { async, TestBed } from '@angular/core/testing';
 import { RouterTestingModule } from '@angular/router/testing';
-import { CardComponent } from 'acmkit/dist/acmkit-lib';
+import {
+  BasePageComponent,
+  CardComponent,
+  LoginCardComponent,
+} from 'acmkit/dist/acmkit-lib';
 import { AppComponent } from './app.component';
 
 describe('AppComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       imports: [RouterTestingModule],
-      declarations: [AppComponent, CardComponent],
+      declarations: [
+        AppComponent,
+        CardComponent,
+        LoginCardComponent,
+        BasePageComponent,
+      ],
     }).compileComponents();
   }));
 
