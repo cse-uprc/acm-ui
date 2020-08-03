@@ -6,7 +6,6 @@ echo ''
 
 echo "Pulling Latest Changes ..."
 git checkout development
-git fetch
 git pull
 echo ''
 
