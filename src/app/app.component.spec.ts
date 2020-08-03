@@ -5,6 +5,7 @@ import {
   CardComponent,
   LoginCardComponent,
 } from 'acmkit/dist/acmkit-lib';
+import { LandingComponent } from 'acmkit/dist/acmkit-lib/lib/components/landing/landing.component';
 import { AppComponent } from './app.component';
 
 describe('AppComponent', () => {
@@ -16,6 +17,7 @@ describe('AppComponent', () => {
         CardComponent,
         LoginCardComponent,
         BasePageComponent,
+        LandingComponent,
       ],
     }).compileComponents();
   }));
