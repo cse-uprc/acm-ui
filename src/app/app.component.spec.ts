@@ -1,28 +1,21 @@
-import { async, TestBed } from '@angular/core/testing';
-import { RouterTestingModule } from '@angular/router/testing';
-import {
-  CardComponent,
-  LandingComponent,
-  LoginCardComponent,
-} from 'acmkit/dist/acmkit-lib';
+import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { setupTests } from 'acmkit/dist/acmkit-lib';
+import { AppTestBed } from 'src/testing/app-test-bed';
 import { AppComponent } from './app.component';
 
-describe('AppComponent', () => {
-  beforeEach(async(() => {
-    TestBed.configureTestingModule({
-      imports: [RouterTestingModule],
-      declarations: [
-        AppComponent,
-        CardComponent,
-        LoginCardComponent,
-        LandingComponent,
-      ],
-    }).compileComponents();
-  }));
+describe('AppTestComponent', () => {
+  let component: AppComponent;
+  let fixture: ComponentFixture<AppComponent>;
+
+  setupTests(async () => AppTestBed.setup());
+
+  beforeEach(() => {
+    fixture = TestBed.createComponent(AppComponent);
+    component = fixture.componentInstance;
+    fixture.detectChanges();
+  });
 
   it('should create the app', () => {
-    const fixture = TestBed.createComponent(AppComponent);
-    const app = fixture.componentInstance;
-    expect(app).toBeTruthy();
+    expect(component).toBeTruthy();
   });
 });
