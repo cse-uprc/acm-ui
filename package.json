@@ -26,6 +26,7 @@
     "@angular/router": "~9.1.1",
     "@auth0/angular-jwt": "^4.1.2",
     "acmkit": "github:cse-uprc/acm-kit#v7.5.0",
+    "aos": "^2.3.4",
     "bootstrap": "^4.5.0",
     "express": "^4.17.1",
     "jquery": "^3.5.1",
