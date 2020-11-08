@@ -3,9 +3,10 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AcmkitLibModule } from 'acmkit/dist/acmkit-lib';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { HomeComponent } from './components/home/home.component';
 
 @NgModule({
-  declarations: [AppComponent],
+  declarations: [AppComponent, HomeComponent],
   imports: [BrowserModule, AppRoutingModule, AcmkitLibModule],
   providers: [],
   bootstrap: [AppComponent],
