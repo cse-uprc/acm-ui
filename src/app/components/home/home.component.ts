@@ -1,13 +1,18 @@
-import { Component, OnInit, ViewEncapsulation } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { JwtService, StompWebsocketService } from 'acmkit/dist/acmkit-lib';
 
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.scss'],
-  encapsulation: ViewEncapsulation.None,
 })
 export class HomeComponent implements OnInit {
-  constructor() {}
+  constructor(private stompService: StompWebsocketService) {}
 
-  ngOnInit(): void {}
+  ngOnInit() {
+    this.stompService.activate();
+    this.stompService
+      .watch('/notifications')
+      .subscribe((res) => console.log(res));
+  }
 }

@@ -8,7 +8,6 @@ import { HomeComponent } from './components/home/home.component';
 @NgModule({
   declarations: [AppComponent, HomeComponent],
   imports: [BrowserModule, AppRoutingModule, AcmkitLibModule],
-  providers: [],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
