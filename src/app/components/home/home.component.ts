@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { JwtService, StompWebsocketService } from 'acmkit/dist/acmkit-lib';
+import { StompWebsocketService } from 'acmkit/dist/acmkit-lib';
 
 @Component({
   selector: 'app-home',
