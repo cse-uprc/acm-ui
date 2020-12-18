@@ -7,12 +7,12 @@ import * as AOS from 'aos';
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent implements OnInit {
-  title = 'acm-ui';
-  testValue = 0;
-
+  display: boolean;
   constructor() {}
 
   ngOnInit() {
+    const webURL = window.location.href;
+    this.display = !webURL.includes('landing') && !webURL.includes('login');
     AOS.init();
   }
 }
