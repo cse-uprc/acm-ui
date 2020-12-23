@@ -8,11 +8,12 @@ import * as AOS from 'aos';
 })
 export class AppComponent implements OnInit {
   display: boolean;
+  nonNavbarUrls = ['/', '/landing', 'login'];
   constructor() {}
 
   ngOnInit() {
-    const webURL = window.location.href;
-    this.display = !webURL.includes('landing') && !webURL.includes('login');
+    const webURL = window.location.pathname;
+    this.display = !this.nonNavbarUrls.includes(webURL);
     AOS.init();
   }
 }
