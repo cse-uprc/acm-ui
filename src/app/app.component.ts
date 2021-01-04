@@ -8,7 +8,7 @@ import * as AOS from 'aos';
 })
 export class AppComponent implements OnInit {
   display: boolean;
-  nonNavbarUrls = ['/', '/landing', 'login'];
+  nonNavbarUrls = ['/', '/landing', 'login', '/login', 'landing'];
   constructor() {}
 
   ngOnInit() {
