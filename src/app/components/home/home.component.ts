@@ -20,7 +20,7 @@ export class HomeComponent implements OnInit {
     { name: 'Bot Service Info', icon: 'house' },
     { name: 'About Us', icon: 'house' },
     { name: 'Contact Services', icon: 'house' },
-    { name: 'How to Contribute?', icon: 'house' },
+    { name: '', icon: '' },
   ];
   constructor(private stompService: StompWebsocketService) {}
 
