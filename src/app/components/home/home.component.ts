@@ -14,7 +14,7 @@ export class HomeComponent implements OnInit {
     { name: 'Teachers', icon: 'house' },
     { name: 'Student Advisors', icon: 'house' },
     { name: 'Video Lectures', icon: 'house' },
-    { name: 'Calendar Events', icon: 'house' },
+    { name: 'Calendar', icon: 'house' },
     { name: 'Event Sign Up', icon: 'house' },
     { name: 'ACM Information', icon: 'house' },
     { name: 'Bot Service Info', icon: 'house' },
