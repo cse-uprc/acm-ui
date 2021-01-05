@@ -1,11 +1,10 @@
 import { Component } from '@angular/core';
-import { StompWebsocketService } from 'acmkit/dist/acmkit-lib';
 
 @Component({
   selector: 'app-home',
-  templateUrl: './classroom.component.html',
-  styleUrls: ['./classroom.component.scss'],
+  templateUrl: './student-advisors.component.html',
+  styleUrls: ['./student-advisors.component.scss'],
 })
-export class ClassroomComponent {
-  constructor(private stompService: StompWebsocketService) {}
+export class StudentAdvisorsComponent {
+  constructor() {}
 }

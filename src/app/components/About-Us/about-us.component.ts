@@ -10,6 +10,6 @@ export class AboutUsComponent {
   constructor(private router: Router) {}
 
   navigateToPage() {
-    this.router.navigate(['home/classroom']);
+    this.router.navigate(['home/about-us']);
   }
 }

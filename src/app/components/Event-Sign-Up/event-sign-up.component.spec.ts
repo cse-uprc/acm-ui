@@ -2,16 +2,16 @@ import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { setupTests } from 'acmkit/dist/acmkit-lib';
 import { AppTestBed } from 'src/testing/app-test-bed';
 
-import { ClassroomComponent } from './classroom.component';
+import { EventSignUpComponent } from './event-sign-up.component';
 
-describe('ClassroomComponent', () => {
-  let component: ClassroomComponent;
-  let fixture: ComponentFixture<ClassroomComponent>;
+describe('EventSignUpComponent', () => {
+  let component: EventSignUpComponent;
+  let fixture: ComponentFixture<EventSignUpComponent>;
 
   setupTests(async () => AppTestBed.setup());
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(ClassroomComponent);
+    fixture = TestBed.createComponent(EventSignUpComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
