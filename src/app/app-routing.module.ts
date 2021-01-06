@@ -22,7 +22,7 @@ const routes: Routes = [
     path: 'home',
     component: HomeComponent,
     children: [
-      { path: '**', redirectTo: 'dashboard', pathMatch: 'full' },
+      { path: '**', redirectTo: '/home/dashboard' },
       {
         path: 'dashboard',
         component: DashboardComponent,
@@ -73,7 +73,7 @@ const routes: Routes = [
       },
     ],
   },
-  { path: '**', redirectTo: 'landing' },
+  { path: '**', redirectTo: '/landing' },
 ];
 
 @NgModule({
