@@ -22,7 +22,6 @@ const routes: Routes = [
     path: 'home',
     component: HomeComponent,
     children: [
-      { path: '**', redirectTo: '/home/dashboard' },
       {
         path: 'dashboard',
         component: DashboardComponent,
@@ -71,6 +70,7 @@ const routes: Routes = [
         path: 'contact-services',
         component: ContactServicesComponent,
       },
+      { path: '**', redirectTo: '/home/dashboard' },
     ],
   },
   { path: '**', redirectTo: '/landing' },
