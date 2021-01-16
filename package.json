@@ -10,6 +10,7 @@
     "test": "ng test --watch=false",
     "test:watch": "ng test",
     "serve": "ng serve",
+    "serve:sourcemap": "ng serve --source-map",
     "lint": "ng lint",
     "e2e": "ng e2e",
     "heroku-postbuild": "ng build --prod"
@@ -25,7 +26,7 @@
     "@angular/platform-browser-dynamic": "~9.1.1",
     "@angular/router": "~9.1.1",
     "@auth0/angular-jwt": "^4.1.2",
-    "acmkit": "github:cse-uprc/acm-kit#v8.3.1",
+    "acmkit": "github:cse-uprc/acm-kit#v8.3.3",
     "aos": "^2.3.4",
     "bootstrap": "^4.5.0",
     "express": "^4.17.1",
