@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AcmkitLibModule } from 'acmkit/dist/acmkit-lib';
+import { QRCodeModule } from 'angularx-qrcode';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { AboutUsComponent } from './components/About-Us/about-us.component';
@@ -32,7 +33,7 @@ import { VideoLecturesComponent } from './components/Video-Lectures/video-lectur
     StudentAdvisorsComponent,
     VideoLecturesComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, AcmkitLibModule],
+  imports: [BrowserModule, AppRoutingModule, AcmkitLibModule, QRCodeModule],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
